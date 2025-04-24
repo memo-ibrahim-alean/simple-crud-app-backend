@@ -17,8 +17,8 @@ A RESTful CRUD API built with **Node.js**, **Express**, and **MongoDB** to manag
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/memo-ibrahim-alean/simple-crud-app-backend.git
-   cd simple-crud-app-backend
+   git clone https://github.com/memo-ibrahim-alean/simple-product-crud-api.git
+   cd simple-product-crud-api
 2. Install dependencies: `npm install`
 3. Create a `.env` file in the root directory and add your MongoDB connection string:
    ```
