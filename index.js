@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const proudctRoutes = require("./routes/proudct.route.js"); 
 const app = express();
+require('dotenv').config();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -15,7 +16,7 @@ app.get("/", (req, res) => {
 
 mongoose
   .connect(
-    "mongodb+srv://memo:qnqP2OfIfvfV1fCZ@backenddb.qgs6ekd.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB"
+    `${process.env.MONGODB_URI}`,
   )
   .then(() => {
     console.log("Connected to database!");
